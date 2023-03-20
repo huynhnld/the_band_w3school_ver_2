@@ -163,11 +163,15 @@ html {
   z-index: 3;
   background-color: black;
   color: white;
-  display: block;
-  overflow: hidden;
 }
-#header #nav,
-#nav li {
+#nav {
+  display: inline-block;
+}
+#nav > li {
+  display: inline-block;
+}
+
+#nav > li:first-child {
   display: inline-block;
 }
 #nav > li > a {
@@ -192,8 +196,8 @@ html {
   min-width: 160px;
 }
 
-#nav > li:hover #subnav {
-  display: block;
+#nav > li:hover > #subnav {
+  display: block !important;
 }
 #subnav li,
 #subnav li a {
@@ -208,9 +212,18 @@ html {
   line-height: 40px;
   padding: 0 35px;
 }
-#header .menu-mobile {
+#header #menu-mobile i {
+  color: black;
+}
+#header #menu-mobile:hover i {
+  color: white;
+}
+#header #menu-mobile {
+  border-bottom-left-radius: 10px;
+  background-color: #fff;
   display: none;
   position: absolute;
+  background-color: none;
   top: 0;
   right: 0;
   padding: 0 21px;
@@ -226,10 +239,10 @@ html {
 #header .search-btn i {
   line-height: 46px;
 }
-#header .menu-mobile:hover,
+#header #menu-mobile:hover,
 #header .search-btn:hover {
-  background-color: #f44336;
-  color: #fff;
+  background-color: #f44336 !important;
+  color: #fff !important;
   cursor: pointer;
 }
 #nav .drop-icon {

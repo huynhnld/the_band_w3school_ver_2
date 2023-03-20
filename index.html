@@ -40,9 +40,9 @@
     <header id="header">
       <ul id="nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Band</a></li>
-        <li><a href="#">tour</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#band">Band</a></li>
+        <li><a href="#tour">tour</a></li>
+        <li><a href="#contact">contact</a></li>
         <li>
           <a href="#">more <i class="drop-icon fa fa-angle-down"></i></a>
           <ul id="subnav">
@@ -53,7 +53,7 @@
         </li>
       </ul>
       <div class="search-btn"><i class="fa fa-search"></i></div>
-      <div class="menu-mobile"><i class="fa fa-align-justify"></i></div>
+      <div id="menu-mobile"><i class="fa fa-align-justify"></i></div>
     </header>
     <section id="slider">
       <!-- <img class="slider-img" src="./asset/img/slider/slider1.jpg" alt="" /> -->
@@ -208,32 +208,5 @@
       </div>
     </footer>
     <script src="./asset/js/index.js"></script>
-
-    <!-- <script>
-      const buyBtns = document.querySelectorAll(".js-buy-ticket-btn");
-      const modal = document.querySelector(".js-modal");
-      const modalCloses = document.querySelectorAll(".js-btn-close");
-      const modalContainer = document.querySelector(".js-modal-container");
-      //hàm hiển thị modal mua vé (thêm class open vào modal)
-      function showBuyTickets() {
-        modal.classList.add("open");
-      }
-      //Hàm ẩn modal mua vé (xóa class Open của modal)
-      function closeBuyTickets() {
-        modal.classList.remove("open");
-      }
-      //chạy hàm for từng thẻ button và lắng nghe CLICK
-      for (buyBtn of buyBtns) {
-        buyBtn.addEventListener("click", showBuyTickets);
-      }
-      modal.addEventListener("click", closeBuyTickets);
-      //NGhe hành vi CLICK vào button Close
-      for (modalClose of modalCloses) {
-        modalClose.addEventListener("click", closeBuyTickets);
-      }
-      modalContainer.addEventListener("click", function (event) {
-        event.stopPropagation();
-      });
-    </script> -->
   </body>
 </html>

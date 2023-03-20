@@ -4,7 +4,10 @@
 /* RESPONSIVE for MOBILE */
 
 @media (max-width: 740px) {
-  #header .menu-mobile {
+  #header {
+    overflow: hidden;
+  }
+  #header #menu-mobile {
     display: block;
   }
   #header .search-btn {
@@ -19,6 +22,7 @@
   }
   .s-col-full {
     width: 100%;
+    margin: auto;
   }
   .member-item .member-img {
     width: 60%;
@@ -26,4 +30,10 @@
   .s-mt20 {
     margin-top: 20px;
   }
+}
+#tour .places-list,
+#tour .places-item {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }

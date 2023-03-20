@@ -23,3 +23,34 @@ for (let modalClose of modalCloses) {
 modalContainer.addEventListener("click", function (event) {
   event.stopPropagation();
 });
+//RESPONSIVE MOBILE
+//ĐÓNG MỞ HEADER NAV
+var header = document.getElementById("header");
+var mobileMenu = document.getElementById("menu-mobile");
+var headerHeight = header.clientHeight;
+
+mobileMenu.onclick = function () {
+  var isClose = header.clientHeight === headerHeight;
+  if (isClose) {
+    header.style.height = "auto";
+  } else {
+    header.style.height = null;
+  }
+};
+//tu dong close khi chon phan tu li trong menu
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+console.log("menuItems: ", menuItems);
+for (i = 0; i < menuItems.length; i++) {
+  var menuItem = menuItems[i];
+  console.log("menuItem: ", menuItem);
+  menuItem.onclick = function (event) {
+    var isParentMenu =
+      this.nextElementSibling &&
+      this.nextElementSibling.classList.contains("subnav");
+    if (isParentMenu) {
+      event.reventDefault();
+    } else {
+      header.style.height = null;
+    }
+  };
+}
