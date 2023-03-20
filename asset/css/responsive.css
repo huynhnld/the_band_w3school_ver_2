@@ -1,0 +1,29 @@
+/* RESPONSIVE for tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+/* RESPONSIVE for MOBILE */
+
+@media (max-width: 740px) {
+  #header .menu-mobile {
+    display: block;
+  }
+  #header .search-btn {
+    display: none;
+  }
+  #header #nav,
+  #nav li {
+    display: block;
+  }
+  #nav li > a {
+    display: block;
+  }
+  .s-col-full {
+    width: 100%;
+  }
+  .member-item .member-img {
+    width: 60%;
+  }
+  .s-mt20 {
+    margin-top: 20px;
+  }
+}

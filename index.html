@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Band lan 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
+  </head>
+  <body>
+    <div id="modal" class="js-modal">
+      <div class="modal-container js-modal-container">
+        <div class="modal-heading">
+          <i class="fa fa-cash-register"></i><span>Tickets</span>
+        </div>
+        <div class="modal-body">
+          <label for="quantity-ticket" class="label-quantity"
+            ><i class="fa fa-shopping-cart"></i>Tickets, $15 per person
+          </label>
+          <input type="text" id="quantity-ticket" placeholder="How many?" />
+          <label for="input-mail" class="label-mail"
+            ><i class="fa fa-user-alt"></i>Send to
+          </label>
+          <input type="email" id="input-mail" placeholder="Email" />
+          <button class="buy-btn">PAY<i class="fa fa-check-circle"></i></button>
+          <button class="modal-close-btn js-btn-close">Close</button>
+          <p class="modal-help">Need <a href="#">help?</a></p>
+        </div>
+        <button class="close-modal js-btn-close">X</button>
+      </div>
+    </div>
+    <header id="header">
+      <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Band</a></li>
+        <li><a href="#">tour</a></li>
+        <li><a href="#">contact</a></li>
+        <li>
+          <a href="#">more <i class="drop-icon fa fa-angle-down"></i></a>
+          <ul id="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extra</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="search-btn"><i class="fa fa-search"></i></div>
+      <div class="menu-mobile"><i class="fa fa-align-justify"></i></div>
+    </header>
+    <section id="slider">
+      <!-- <img class="slider-img" src="./asset/img/slider/slider1.jpg" alt="" /> -->
+      <div class="text-body">
+        <h2 class="text-heading">New York</h2>
+        <p class="text-content">The atsmosphere in New Yord is lorem ipsum.</p>
+      </div>
+    </section>
+    <section id="band" class="content">
+      <h2 class="heading">THE BAND</h2>
+      <p class="sub-heading">We love music.</p>
+      <p class="text-about">
+        We have created a fictional band website. Lorem ipsum dolor sitamet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="member-list row">
+        <div class="member-item s-col-full col col-third">
+          <p class="name">Name</p>
+          <img src="./asset/img/image-team.jpg" alt="" class="member-img" />
+        </div>
+        <div class="member-item s-col-full col col-third">
+          <p class="name">Name</p>
+          <img src="./asset/img/image-team.jpg" alt="" class="member-img" />
+        </div>
+        <div class="member-item s-col-full col col-third">
+          <p class="name">Name</p>
+          <img src="./asset/img/image-team.jpg" alt="" class="member-img" />
+        </div>
+      </div>
+    </section>
+    <section id="tour">
+      <div class="content">
+        <h2 class="heading">TOUR DATES</h2>
+        <p class="sub-heading">Remember to book your tickets!</p>
+        <ul class="time-event">
+          <li class="month-ticket">
+            September <span class="sold-out">Sold out</span>
+          </li>
+          <li class="month-ticket">
+            October<span class="sold-out">Sold out</span>
+          </li>
+          <li class="month-ticket">
+            November3 <span class="quantity">3</span>
+          </li>
+        </ul>
+        <div class="place-list row">
+          <div class="place-item s-col-full col col-third">
+            <img
+              src="./asset/img/places/newyork.jpg"
+              alt=""
+              class="place-img"
+            />
+            <div class="place-content">
+              <p class="place-name">New York</p>
+              <p class="place-time">Fri 27 Nov 2016</p>
+              <p class="place-decription">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="buy-ticket-btn js-buy-ticket-btn">
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+          <div class="place-item s-col-full col col-third">
+            <img src="./asset/img/places/paris.jpg" alt="" class="place-img" />
+            <div class="place-content">
+              <p class="place-name">Paris</p>
+              <p class="place-time">Sat 28 Nov 2016</p>
+              <p class="place-decription">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="buy-ticket-btn js-buy-ticket-btn">
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+          <div class="place-item s-col-full col col-third">
+            <img
+              src="./asset/img/places/sanfran.jpg"
+              alt=""
+              class="place-img"
+            />
+            <div class="place-content">
+              <p class="place-name">San Francisco</p>
+              <p class="place-time">Sun 29 Nov 2016</p>
+              <p class="place-decription">
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+              </p>
+              <button class="buy-ticket-btn js-buy-ticket-btn">
+                Buy Ticket
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content">
+        <h2 class="heading">CONTACT</h2>
+        <p class="sub-heading">Fan? Drop a note!</p>
+        <div class="row contact-detail">
+          <div class="detail s-col-full col col-half">
+            <p class="contact-place">
+              <i class="location-icon fa fa-map-marker-alt"></i>Chicago, US
+            </p>
+            <p class="contact-phone">
+              <i class="phone-icon fa fa-phone"></i>Phone: +00 151515
+            </p>
+            <p class="contact-email">
+              <i class="mail-icon fa fa-envelope-open"></i>Email: mail@mail.com
+            </p>
+          </div>
+          <div class="s-mt20 col s-col-full col-half form">
+            <div class="row">
+              <div class="col col-half">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+              <div class="col col-half">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div class="row mt-8">
+              <div class="col col-full">
+                <input type="text" class="form-control" placeholder="Comment" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input required type="submit" value="Send" class="submit-btn" />
+      </div>
+    </section>
+    <section id="map"></section>
+    <footer>
+      <div class="content">
+        <div class="social-list">
+          <i class="icon fab fa-facebook"></i>
+          <i class="icon fab fa-linkedin"></i>
+          <i class="icon fab fa-instagram"></i>
+          <i class="icon fab fa-twitter"></i>
+        </div>
+        <div class="copy-right">
+          <p class="right-text">Powered by <a href="#">w3.css</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="./asset/js/index.js"></script>
+
+    <!-- <script>
+      const buyBtns = document.querySelectorAll(".js-buy-ticket-btn");
+      const modal = document.querySelector(".js-modal");
+      const modalCloses = document.querySelectorAll(".js-btn-close");
+      const modalContainer = document.querySelector(".js-modal-container");
+      //hàm hiển thị modal mua vé (thêm class open vào modal)
+      function showBuyTickets() {
+        modal.classList.add("open");
+      }
+      //Hàm ẩn modal mua vé (xóa class Open của modal)
+      function closeBuyTickets() {
+        modal.classList.remove("open");
+      }
+      //chạy hàm for từng thẻ button và lắng nghe CLICK
+      for (buyBtn of buyBtns) {
+        buyBtn.addEventListener("click", showBuyTickets);
+      }
+      modal.addEventListener("click", closeBuyTickets);
+      //NGhe hành vi CLICK vào button Close
+      for (modalClose of modalCloses) {
+        modalClose.addEventListener("click", closeBuyTickets);
+      }
+      modalContainer.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    </script> -->
+  </body>
+</html>
